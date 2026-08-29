@@ -1,0 +1,26 @@
+{
+  "name": "Unlimited Abyss",
+  "description": "Makes the Abyss floor limit and waypoint interval effectively unreachable during ordinary play",
+  "author": "Wolfgang Kern",
+  "version": "1.0.0",
+  "operations": [
+    {
+      "op": "plist_set",
+      "file": "Dungeon_15b.plist",
+      "path": [
+        "creationData",
+        "lastFloor"
+      ],
+      "value": 2147483647
+    },
+    {
+      "op": "plist_set",
+      "file": "Dungeon_15b.plist",
+      "path": [
+        "creationData",
+        "waypointEvery"
+      ],
+      "value": 2147483647
+    }
+  ]
+}
