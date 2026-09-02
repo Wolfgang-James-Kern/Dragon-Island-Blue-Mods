@@ -1,0 +1,110 @@
+{
+  "name": "Manual Encounters",
+  "description": "Disables random overworld encounters while preserving fixed encounters",
+  "author": "Wolfgang Kern",
+  "version": "1.0.0",
+  "operations": [
+    {
+      "op": "plist_set",
+      "file": "World_1-1.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_1-2.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_1-3.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_1-4.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_2-1.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_2-2.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_2-3.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_2-4.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_3-1.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_3-2.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_3-3.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_3-4.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_4-1.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_4-2.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_4-3.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "World_4-4.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    },
+    {
+      "op": "plist_set",
+      "file": "UnderWorld_1-1.plist",
+      "path": ["encounterChance"],
+      "value": 0.0
+    }
+  ]
+}

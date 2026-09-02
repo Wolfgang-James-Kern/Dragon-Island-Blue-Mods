@@ -7,3 +7,5 @@ Launcher. Each mod is kept in its own self-contained folder:
   approximately 20% at their listed locations.
 - `unlimited_abyss`: raises the Abyss floor and waypoint limits to the largest
   signed 32-bit integer.
+- `manual_encounters`: disables random encounters in all original worlds while
+  retaining encounter-capable POIs for deliberate battles.
