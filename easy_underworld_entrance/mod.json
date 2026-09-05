@@ -1,0 +1,82 @@
+{
+  "name": "Beach Underworld Entrance",
+  "description": "Adds a connected portal north of 4-4_Beach_2 that travels directly to the Underworld",
+  "author": "Wolfgang Kern",
+  "version": "1.0.0",
+  "operations": [
+    {
+      "op": "plist_append_unique",
+      "file": "World_4-4.plist",
+      "path": ["pointsOfInterest"],
+      "value": {
+        "modKey": "underworld_beach_entrance.poi",
+        "type": "Outdoor.Generic",
+        "arguments": {
+          "instanceName": "4-4_Underworld_Entrance",
+          "position": "{313,262}",
+          "zoneChange": {
+            "type": "Generic",
+            "arguments": {
+              "world": {
+                "type": "UnderWorld_1-1"
+              },
+              "targetZoneChange": "Underworld_4-4_Entrance"
+            }
+          }
+        }
+      },
+      "unique_key": "modKey"
+    },
+    {
+      "op": "plist_append_unique",
+      "file": "World_4-4.plist",
+      "path": ["connections"],
+      "value": {
+        "modKey": "underworld_beach_entrance.connection",
+        "type": "Connection",
+        "arguments": {
+          "poi1": "4-4_Beach_2",
+          "poi2": "4-4_Underworld_Entrance"
+        }
+      },
+      "unique_key": "modKey"
+    },
+    {
+      "op": "plist_append_unique",
+      "file": "UnderWorld_1-1.plist",
+      "path": ["pointsOfInterest"],
+      "value": {
+        "modKey": "underworld_beach_entrance.underworld_poi",
+        "type": "Outdoor.Generic",
+        "arguments": {
+          "instanceName": "Underworld_4-4_Entrance",
+          "position": "{240,105}",
+          "zoneChange": {
+            "type": "Generic",
+            "arguments": {
+              "world": {
+                "type": "World_4-4"
+              },
+              "targetZoneChange": "4-4_Underworld_Entrance"
+            }
+          }
+        }
+      },
+      "unique_key": "modKey"
+    },
+    {
+      "op": "plist_append_unique",
+      "file": "UnderWorld_1-1.plist",
+      "path": ["connections"],
+      "value": {
+        "modKey": "underworld_beach_entrance.underworld_connection",
+        "type": "Connection",
+        "arguments": {
+          "poi1": "Underworld_Cave_19",
+          "poi2": "Underworld_4-4_Entrance"
+        }
+      },
+      "unique_key": "modKey"
+    }
+  ]
+}
